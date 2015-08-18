@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile arg="true"/>
+  <group name="LaTeX">
+    <entry name="document_title" type="String">
+      <label>Article title</label>
+      <default>Example article</default>
+    </entry>
+    <entry name="document_author" type="String">
+      <label>Article author</label>
+      <default>Anonymous</default>
+    </entry>
+  </group>
+</kcfg>

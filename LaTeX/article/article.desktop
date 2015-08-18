@@ -1,0 +1,12 @@
+[General]
+Name=LaTex article
+Comment=Simple LaTeX article
+Category=LaTeX/Basic
+Language=LaTeX
+Files=TeX
+OptionsFile=options.kcfg
+ 
+[TeX]
+Name=TeX
+File=article.tex
+OutputFile=article.tex
