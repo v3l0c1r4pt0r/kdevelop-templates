@@ -2,7 +2,7 @@ export TAR=tar
 # compress as bzip2
 export CMD=-j
 export EXT=tar.bz2
-SUBDIRS=LaTeX
+SUBDIRS=C LaTeX
 
 all: $(SUBDIRS)
 $(SUBDIRS):
