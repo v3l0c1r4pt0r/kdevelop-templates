@@ -1,8 +1,10 @@
-TEMPLATES=article
-GOALS=$(addsuffix .$(EXT),$(TEMPLATES))
+FIL_TEMPLATES=article
+PRO_TEMPLATES=
+GOALS=$(addsuffix .$(EXT),$(FIL_TEMPLATES)) $(addsuffix .$(EXT),$(PRO_TEMPLATES))
 all: $(GOALS)
-%.$(EXT): $(TEMPLATES:.$(EXT)=)
+%.$(EXT): $(FIL_TEMPLATES:.$(EXT)=) $(PRO_TEMPLATES:.$(EXT)=)
 	cd $</; tar $(CMD) -cvf ../$@ ./*
-$(TEMPLATES:.$(EXT)=): $(TEMPLATES:.$(EXT)=)/$(TEMPLATES:.$(EXT)=).desktop
+$(FIL_TEMPLATES:.$(EXT)=): $(FIL_TEMPLATES:.$(EXT)=)/$(FIL_TEMPLATES:.$(EXT)=).desktop
+$(PRO_TEMPLATES:.$(EXT)=): $(PRO_TEMPLATES:.$(EXT)=)/$(PRO_TEMPLATES:.$(EXT)=).kdevtemplate
 clean:
 	rm -f $(GOALS)
