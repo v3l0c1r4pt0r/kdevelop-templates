@@ -51,7 +51,7 @@ IRAM1FW		:= $(FWDIR)/$(IRAM1_ADDR).bin
 IROM0FW		:= $(FWDIR)/$(IROM0_ADDR).bin
 
 # elf output name
-OUTFILE		:= a.out
+OUTFILE		:= %{APPNAMELC}
 
 # sources to include in project
 SRC		:= $(wildcard *.c)
